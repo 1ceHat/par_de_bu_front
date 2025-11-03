@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/par_de_bu_front/static/css/main.94f04707.css",
+    "main.js": "/par_de_bu_front/static/js/main.b8ca412f.js",
+    "static/js/453.d7446e4a.chunk.js": "/par_de_bu_front/static/js/453.d7446e4a.chunk.js",
+    "index.html": "/par_de_bu_front/index.html",
+    "main.94f04707.css.map": "/par_de_bu_front/static/css/main.94f04707.css.map",
+    "main.b8ca412f.js.map": "/par_de_bu_front/static/js/main.b8ca412f.js.map",
+    "453.d7446e4a.chunk.js.map": "/par_de_bu_front/static/js/453.d7446e4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94f04707.css",
+    "static/js/main.b8ca412f.js"
+  ]
+}
