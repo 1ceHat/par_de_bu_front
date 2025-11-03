@@ -6,6 +6,12 @@ import ProductSection from "./components/ProductSection";
 import ProductDetail from "./components/ProductDetail";
 import ConstructorPage from "./pages/ConstructorPage";
 
+// images
+import image1 from "./images/image1.jpg";
+import image2 from "./images/image2.png";
+import image3 from "./images/image3.png";
+import image4 from "./images/image4.png";
+
 function App() {
   // const [products, setProducts] = useState([])
   // useEffect(() => {
@@ -17,7 +23,7 @@ function App() {
     { "id": 1, 
       "title": "Currant and Lemongrass", 
       "brand": "LEVRANA", 
-      "imgs": ["./images/image1.jpg"],
+      "imgs": [image1],
       "category": "Гель для умывания с кислотами",
       "description": "Этот гель для умывания с кислотами смородины и лимонграсса нежно отшелушивает, удаляя мертвые клетки кожи и загрязнения. Он осветляет тон кожи, сужает поры и дарит освежающее ощущение, оставляя кожу гладкой и обновленной.",
       "consist": "Вода, кокос-глюкозид, глицерин, ксантановая гум, бензиловый спирт, бетаин, молочная кислота, экстракт травы цимбопогона флексуозус, экстракт листьев розмарина официналис, салициловая кислота, экстракт плодов черной смородины, калий сорбат, натрий бензоат, экстракт плодов вакциниум витис-идея.",
@@ -28,7 +34,7 @@ function App() {
     { "id": 2, 
       "title": "Bioderma Sensibio", 
       "brand": "", 
-      "imgs": ["./images/image2.png"],
+      "imgs": [image2],
       "category": "Очищающий гель для лица.",
       "description": "Sensibio бережно очищает кожу, удаляя загрязнения и макияж без раздражения. Успокаивающая формула поддерживает естественный баланс кожи, что делает его идеальным для чувствительных типов кожи.",
       "consist": "Вода, натрий кокоамфоацетат, пропандиол, натрий лауроиль саркосинат, лимонная кислота, коко- глюкозид, глицерил олеат, натрий цитрат, peg-90 глицерил исостеарат, маннитол, ксилитол, лаурет-2, рахманоза, фруктоолигосахариды, токоферол, гидрогенизированные пальмовые глицериды цитрат, лецитин, аскорбил палмитат.",
@@ -39,7 +45,7 @@ function App() {
     { "id": 3, 
       "title": "lab biome hydration", 
       "brand": "NATURA SIBERICA", 
-      "imgs": ["./images/image3.png"],
+      "imgs": [image3],
       "category": "Гель для умывания",
       "description": "Biome Hydration Cleanser глубоко очищает, сохраняя естественный баланс влаги кожи. Обогащенный пробиотиками, он способствует здоровому микробиому, оставляя кожу свежей, увлажненной и сияющей.",
       "consist": "Вода, вода линнеи бореалис, фосфолипиды, ферментный фильтрат flavocetraria nivalis, экстракt laminaria angustatа, экстракт цветков trifolium pratense, экстракт comarum palustre, экстракт корня rhaponticum carthamoides, экстракт цветков/ листьев/стеблей nepetа sibirica.",
@@ -50,7 +56,7 @@ function App() {
     { "id": 4, 
       "title": "Hyaluronic", 
       "brand": "LIBREDERM", 
-      "imgs": ["./images/image4.png"],
+      "imgs": [image4],
       "category": "Пенка для умывания",
       "description": "Гиалуроновая пенка для умывания глубоко увлажняет и питает кожу, удаляя загрязнения, не лишая её влаги. Улучшает упругость кожи, оставляя её мягкой, гладкой и свежей.",
       "consist": "Вода, кокамидопропил бетаин, натрий лауроил саркозинат, дексил гликозид, гидроксиэтил мочевина, гуар гидроксипропилтримониум хлорид, натрий кокосил глутамат, peg-40 водородированный касторовое масло, мальтолигоцил глюкозид/ водородированный гидролизованный крахмал, натрий рса, натрий гиалуронат, парфюм, бутилфенил метилпропиональ, бензилсалицилат, гидроксиизогексил-3- циклогексенкарбальдегид, тетрасодий эдта, лимонная кислота, метилхлороизотиазолинон, метилизотиазолинон, магний нитрат, магний хлорид.",
@@ -66,7 +72,7 @@ function App() {
         <Routes>
           {/* Главная страница */}
           <Route
-            path="/"
+            path="/par_de_bu_front"
             element={
               <div className="min-w-full px-20">
               <InfoBar />
@@ -77,7 +83,7 @@ function App() {
             }
           />
           {/* Страница конструктора */}
-          <Route path="/constructor" element={<ConstructorPage />} />
+          <Route path="par_de_bu_front/constructor" element={<ConstructorPage />} />
         </Routes>
       </div>
     </Router>

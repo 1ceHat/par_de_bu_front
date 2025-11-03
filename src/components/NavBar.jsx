@@ -1,12 +1,13 @@
 import React from "react";
 import { Search, ShoppingBag, User } from "lucide-react";
+import logo from "../images/logo2.png";
 
 const NavBar = () => {
   return (
     <nav className="bg-[#D4F3F0] flex justify-between items-center mb-5 px-6 py-3 rounded-b-3xl shadow-md min-w-full">
       <div className="font-bold text-xl text-gray-700 w-40 h-dvw">
-        <a href="/">
-          <img alt="LOGO" src="./images/logo2.png"></img>
+        <a href="/par_de_bu_front">
+          <img alt="LOGO" src={logo}></img>
         </a>
       </div>
       <div className="flex items-center space-x-4">

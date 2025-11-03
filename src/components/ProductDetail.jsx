@@ -86,7 +86,7 @@ const ProductDetail = ({ product, onClose, onChoose }) => {
           {/* Кнопка */}
           {!isConstructorPage ? (
             <button
-                onClick={() => navigate("/constructor", {state: {product}})}
+                onClick={() => navigate("./constructor", {state: {product}})}
                 className="w-full bg-[#D4F3F0] text-gray-800 font-semibold py-3 rounded-xl mt-4 hover:bg-[#bdeae5] transition"
             >
                 Перейти в конструктор
