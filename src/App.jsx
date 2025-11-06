@@ -74,7 +74,7 @@ function App() {
           <Route
             path="/par_de_bu_front"
             element={
-              <div className="min-w-full px-20">
+              <div className="min-w-full px-20 max-sm:px-3">
               <InfoBar />
               <ProductSection title="Уход за лицом" products={products} />
               <ProductSection title="Уход за телом" products={products} />

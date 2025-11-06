@@ -91,7 +91,7 @@ const ConstructorPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white px-4 py-8 w-2/3">
+    <div className="min-h-screen bg-white px-4 py-8 w-2/3 max-sm:w-full max-sm:px-5">
       <div className="bg-[#D4F3F0] rounded-xl py-4 px-2 text-center mb-6">
         <h1 className="text-xl font-semibold text-gray-800">
           В НАШЕМ КОНСТРУКТОРЕ МОЖНО

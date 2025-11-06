@@ -21,7 +21,7 @@ const ProductDetail = ({ product, onClose, onChoose }) => {
       >
         {/* Контейнер окна */}
         <motion.div
-          className="bg-white rounded-3xl p-6 w-[90%] max-w-lg relative overflow-hidden"
+          className="bg-white rounded-3xl p-6 w-[90%] max-w-lg relative overflow-hidden max-sm:p-2"
           initial={{ scale: 0.9, opacity: 0, y: 30 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.9, opacity: 0, y: 30 }}
@@ -61,7 +61,7 @@ const ProductDetail = ({ product, onClose, onChoose }) => {
           </div>
 
           {/* Вкладки */}
-          <div className="flex justify-around bg-[#D4F3F0] rounded-xl p-2 text-gray-600 font-medium mb-4">
+          <div className="flex justify-around bg-[#D4F3F0] rounded-xl p-2 text-gray-600 font-medium mb-4 max-sm:text-[14px] max-sm:w-full">
             {["описание", "состав", "применение", "продавец"].map((tab) => (
               <button
                 key={tab}
@@ -77,17 +77,17 @@ const ProductDetail = ({ product, onClose, onChoose }) => {
 
           {/* Контент */}
           <div className="text-gray-700 text-justify leading-relaxed mb-4">
-            {activeTab === "описание" && (<p>{product.description ? product.description : " " }</p>)}
-            {activeTab === "состав" && (<p>{product.consist ? product.consist : " " }</p>)}
-            {activeTab === "применение" && (<p>{product.using ? product.using : " " } </p>)}
-            {activeTab === "продавец" && (<p>{product.seller ? product.seller : " "}</p>)}
+            {activeTab === "описание" && (<p className="max-sm:p-3">{product.description ? product.description : " " }</p>)}
+            {activeTab === "состав" && (<p className="max-sm:p-3">{product.consist ? product.consist : " " }</p>)}
+            {activeTab === "применение" && (<p className="max-sm:p-3">{product.using ? product.using : " " } </p>)}
+            {activeTab === "продавец" && (<p className="max-sm:p-3">{product.seller ? product.seller : " "}</p>)}
           </div>
 
           {/* Кнопка */}
           {!isConstructorPage ? (
             <button
                 onClick={() => navigate("./constructor", {state: {product}})}
-                className="w-full bg-[#D4F3F0] text-gray-800 font-semibold py-3 rounded-xl mt-4 hover:bg-[#bdeae5] transition"
+                className="w-full bg-[#D4F3F0] text-gray-800 font-semibold py-3 rounded-xl mt-4 hover:bg-[#bdeae5] transition max-sm:"
             >
                 Перейти в конструктор
             </button>
